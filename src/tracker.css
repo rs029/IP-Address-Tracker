@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  /* display: grid; */
+  font-family: 'Roboto', sans-serif;
+}
+
+.ipAddressResult {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-inline: 100px; */
+  /* padding-bottom: 50px; */
+  color: red;
+  left:50%;
+  transform: translate3d(-50%, -80px, 0);
+  background-color: white;
+  width: 1000px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.outputBox {
+  margin-inline: 40px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  padding-top: 20px;
+  /* background-color: rgb(190, 8, 69); */
+  color: hsl(0, 0%, 59%);
+  font-weight: 900;
+  font-size: 12px;
+  height: 100px;
+  width: 200px
+}
+
+.outputBox p {
+  font-size: large;
+  margin-top: 10px;
+  color: hsl(0, 0%, 17%);
+
+}
+
+.lowerDiv {
+  background-color: hsl(0, 0%, 59%);
+  height: 350px;  
+  margin-top: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upperDiv {
+  position: relative;
+}
+
+.bgDesktop {
+  /* overflow-clip-margin: content-box; */
+  /* overflow: clip; */
+  width: 100%;
+}
+
+.trackerType {
+  position: absolute;
+  left: 50%;
+  transform: translate3d(-50%, -250px, 0);
+  color: white;
+}
+
+.inputIPAddress {
+  position:absolute;
+  left: 50%;
+  transform: translate3d(-50%, -190px, 0);
+  /* width: 500px; */
+  display: flex;
+  /* grid-template-columns: 12fr 1fr; */
+  /* flex-direction: row; */
+  /* flex: auto; */
+  /* cursor: pointer; */
+}
+
+.inputIPAddress input {
+  height: 50px;
+  width: 480px;
+  padding-inline-start: 20px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  outline: none;
+  border: 1px solid #8F99BB;
+  /* border-radius: 15px; */
+  cursor: pointer;
+  font-size: 15px;
+  color: hsl(0, 0%, 17%);
+}
+
+.inputIPAddress input::placeholder {
+  color: hsl(0, 0%, 59%);
+  /* color: red; */
+}
+
+.inputIPAddress button {
+  width: 50px;
+  height: 50px;
+  margin-inline-start: -5px;
+  outline: none;
+  background-color: hsl(0, 0%, 17%);
+  border: 1px solid #575757;
+  border-start-end-radius: 15px;
+  border-end-end-radius: 15px;
+  cursor: pointer;
+}
+
+.searchArrow {
+  /* position: absolute; */
+  /* background-color: hsl(0, 0%, 17%); */
+  /* height: 50px; */
+  /* object-fit: contain; */
+  /* align-self: center; */
+}
