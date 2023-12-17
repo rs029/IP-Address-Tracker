@@ -18,35 +18,35 @@
          <h1>IP Address Tracker</h1> 
         </div>
         <div class="inputIPAddress">
-          <input type="text" placeholder="Enter IP Address">
-          <button><img src="../images/icon-arrow.svg" alt="search-arrow" class="searchArrow"></button>
+          <input type="text" placeholder="Enter IP Address" id="ipAddress">
+          <button id="inputButton"><img src="../images/icon-arrow.svg" alt="search-arrow" class="searchArrow"></button>
         </div>
       </div>
       <!--Declaring Top div which is on upper & lower div-->
       <div class="ipAddressResult">
         <div class="outputBox">
-          <label for="IP ADDRESS">
+          <h4>
             IP ADDRESS
-          </label>
-          <p>192.212.174.101</p>
+          </h4>
+          <div id="ip"><p>192.212.174.101</p></div>
         </div>
         <div class="outputBox">
-          <label for="LOCATION">
+          <h4>
             LOCATION
-          </label>
-          <p>Brooklyn, NY 10001</p>
+          </h4>
+          <div id="city"><p>Brooklyn, NY 10001</p></div>
         </div>
         <div class="outputBox">
-          <label for="TIMEZONE">
+          <h4>
             TIMEZONE
-          </label>
-          <p>UTC - 05:00</p>
+          </h4>
+          <div id="timezone"><p>UTC - 05:00</p></div>
         </div>
         <div class="outputBox">
-          <label for="ISP">
+          <h4>
             ISP
-          </label>
-          <p>SpaceX Starlink</p>
+          </h4>
+          <div id="isp"><p>SpaceX Starlink</p></div>
         </div>
       </div>
       <!--Declaring Lower div where the location will show-->
@@ -54,5 +54,6 @@
         <img src="../images/icon-location.svg" alt="locationOnMap">
       </div>
     </div>
+    <script src="tracker.js"></script>
 </body>
 </html>
